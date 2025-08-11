@@ -1,14 +1,13 @@
-import React from "react";
-import { FeatureFlagsContext } from "./components/feature-flag/context";
+import FeatureFlagGlobalState from "./components/feature-flag/context";
 import FeatureFlage from "./components/feature-flag";
 
 function App() {
   return (
     <div>
-      {/* Feature Flag */}
-      <FeatureFlagsContext>
+      {/* Feature Flag Impletementation */}
+      <FeatureFlagGlobalState>
         <FeatureFlage />
-      </FeatureFlagsContext>
+      </FeatureFlagGlobalState>
     </div>
   );
 }
