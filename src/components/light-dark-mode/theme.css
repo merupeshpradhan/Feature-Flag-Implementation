@@ -1,0 +1,46 @@
+.light-dark-mode {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  transition: all 0.5s;
+}
+
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --buttom-bg: #000;
+  --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --background: #000000;
+  --text-primary: #fff;
+  --buttom-bg: #fff;
+  --button-text: #000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light-dark-mode .container p {
+  color: var(--text-primary);
+  font-size: 40px;
+}
+
+.light-dark-mode .container button {
+  background-color: var(--buttom-bg);
+  color: var(--button-text);
+  border: 1px solid var(--buttom-bg);
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
