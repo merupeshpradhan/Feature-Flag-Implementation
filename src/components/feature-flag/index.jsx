@@ -42,7 +42,7 @@ export default function FeatureFlags() {
     return enabledFlags[getCurrentKey];
   }
 
-  if (loading) return <h1>Loading data ! Please wait</h1>;
+  if (loading) return <h1>Loading data ! Please wait</h1>; 
 
   return (
     <div>
